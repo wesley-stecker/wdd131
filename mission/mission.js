@@ -14,7 +14,7 @@ let logo = document.querySelector("img");
 // make sure the logo src is the blue logo.
 if (selectedTheme === "dark"){
     bodyElement.classList.add("dark");
-    logo.src = "byui-logo_white.webp";
+    logo.src = "byui-logo_white.png";
 }
 if (selectedTheme === "light"){
     bodyElement.classList.remove("dark");
