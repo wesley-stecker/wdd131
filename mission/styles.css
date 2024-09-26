@@ -36,3 +36,12 @@ img {
     align-self: center;
     padding: 0px 30%;
 }
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h2 {
+    color:#2581bb;
+}
