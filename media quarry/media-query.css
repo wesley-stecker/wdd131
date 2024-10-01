@@ -1,11 +1,11 @@
 body {
     font-family: "Roboto", sans-serif;
-  font-weight: 150;
-  font-style: normal;
-  font-size: 120%;
+    font-weight: 150;
+    font-style: normal;
+    font-size: 120%;
 }
 
-header {
+header, footer {
     max-width: 640px;
     margin: 1rem auto;
     border: solid;
@@ -13,31 +13,37 @@ header {
     padding: 10%;
     border-color: rgb(103, 255, 255);
 }
+
 main {
     max-width: 640px;
     margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-gap: 1rem; /* Add a gap of 1rem between sections */
+}
+
+section {
     border: solid;
-    border-width: 10px;
+    border-width: 5px;
     padding: 10%;
     border-color: rgb(103, 255, 255);
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
 }
 
 #one {
-    grid-row: 0/1;
+    grid-column: 1; /* First box in first column */
 }
 
 #two {
-    grid-row: 1/2;
+    grid-column: 2; /* Second box in second column */
 }
 
-footer {
-    max-width: 640px;
-    margin: 1rem auto;
-    border: solid;
-    border-width: 10px;
-    padding: 10%;
-    border-color: rgb(103, 255, 255);
+@media screen and (min-width: 500px) {
+    header {
+        background-color: black; /* Black background for header */
+        color: white; /* White text for header */
+    }
+
+    main {
+        grid-template-columns: repeat(2, 1fr); /* Two columns of equal size */
+    }
 }
