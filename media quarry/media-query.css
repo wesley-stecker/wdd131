@@ -5,20 +5,31 @@ body {
     font-size: 120%;
 }
 
-header, footer {
+footer {
     max-width: 640px;
     margin: 1rem auto;
     border: solid;
     border-width: 10px;
     padding: 10%;
     border-color: rgb(103, 255, 255);
+    
+}
+
+header {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: solid;
+    border-width: 10px;
+    padding: 10%;
+    border-color: rgb(103, 255, 255);
+    background-color: rgb(103, 255, 255);
 }
 
 main {
     max-width: 640px;
     margin: 1rem auto;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: 1fr 1fr; /* Two columns */
     grid-gap: 1rem; /* Add a gap of 1rem between sections */
 }
 
@@ -30,20 +41,29 @@ section {
 }
 
 #one {
-    grid-column: 1; /* First box in first column */
+    grid-row: 1; /* First box in first column */
 }
 
 #two {
-    grid-column: 2; /* Second box in second column */
+    grid-row: 2; /* Second box in second column */
 }
 
 @media screen and (min-width: 500px) {
     header {
-        background-color: black; /* Black background for header */
-        color: white; /* White text for header */
+        background-color: rgb(0, 0, 0);
+        color: white;
     }
-
     main {
-        grid-template-columns: repeat(2, 1fr); /* Two columns of equal size */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    #one {
+        grid-row: 1; /* First box in first column */
+        grid-column: 1;
+    }
+    
+    #two {
+        grid-row: 1; /* Second box in second column */
+        grid-column: 2;
     }
 }
