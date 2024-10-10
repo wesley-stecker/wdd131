@@ -12,9 +12,9 @@ function newTask() {
   let input = document.getElementById("todo");
   let inputValue = input.inputValue;
   // add it to our arrays tasks
-  let taskarray = tasks.push(inputValue);
+  let arraytasks = tasks.push(inputValue);
   // render out the list
-  
+  renderTasks(arraytasks)
 }
 
 function removeTask(taskElement) {
