@@ -3,18 +3,23 @@ let tasks = [];
 
 function renderTasks(tasks) {
   // get the list element from the DOM
-  document.getElementById("todoList").innerHTML = taskarray;
+  const todoList = document.getElementById("todoList");
   // loop through the tasks array. transform (map) each task object into the appropriate HTML to represent a to-do.
+  const taskHTML = tasks.map(task => '<li>${task}</li>').join('');
+  todoList.innerHTML = taskHTML;
 }
 
 function newTask() {
   // get the value entered into the #todo input
   let input = document.getElementById("todo");
-  let inputValue = input.inputValue;
+  let inputValue = input.value.trim();
   // add it to our arrays tasks
-  let arraytasks = tasks.push(inputValue);
+if (inputValue !== '')
+
+  tasks.push(inputValue);
   // render out the list
-  renderTasks(arraytasks)
+  input.value = '';
+  renderTasks(tasks);
 }
 
 function removeTask(taskElement) {
