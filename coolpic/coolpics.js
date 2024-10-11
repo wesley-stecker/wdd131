@@ -8,7 +8,7 @@ function menuhide() {
 
 
 
-function hangleResize(){
+function handleResize(){
   if (window.innerWidth > 1000) {
     menu.classList.remove("hide");
   } else {
@@ -29,7 +29,7 @@ const alt = "big image"
 function viewerTemplate(pic, alt) {
   return `<div class="viewer">
     <button class="close-viewer">X</button>
-    <img src="${pic}" alt="${alt}">
+    <img id="bigimage" src="${pic}" alt="${alt}">
     </div>`;
 }
 
