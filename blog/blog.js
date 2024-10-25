@@ -43,11 +43,11 @@ const outputElement = document.querySelector("#maincontent");
 
 function displayArticles() {
   articles.forEach((item) => {
-    // Create a new article element
-    const newArticle = document.createElement("article");
-    newArticle.classList.add("book");  // Add the book class for styling
     
-    // Create template literal with article content
+    const newArticle = document.createElement("article");
+    newArticle.classList.add("book");  
+    
+   
     const articleContent = `
       <div class="mainbook">
         <h2>${item.title}</h2>
@@ -64,13 +64,13 @@ function displayArticles() {
       </div>
     `;
 
-    // Set the HTML content of the article
+    
     newArticle.innerHTML = articleContent;
     
-    // Append the new article to the main content
+    
     outputElement.appendChild(newArticle);
   });
 }
 
-// Call the function to display articles when the page loads
+
 displayArticles();
