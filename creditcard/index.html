@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="happy.jpg" type="image/x-icon">
 </head>
 <body>
     <form action="">
-        <label for="cardnum">Card Number:</label><br>
-        <input type="text" id="cardnum" name="cardnum"><br>
-        <label for="cardhold">Card holder:</label><br>
-        <input type="text" id="cardhold" name="cardhold">
-        <label for="expmm">Expiration:</label><br>
-        <input type="text" id="expmm" name="expmm">
-        <input type="text" id="expyy" name="expyy">
-        <label for="cvc">CVC/CVV</label><br>
-        <input type="text" id="cvc" name="cvc">
+
+        <div class="back">
+            <div class="backtxt">
+                <label class="cvctxt" for="cvc">CVC/CVV</label><br>
+                <input type="text" id="cvc" name="cvc" placeholder="xxx">
+            </div>
+        </div>
+        <div class="front">
+            <div class="fronttext">
+                <p class="total">Total: $1:99</p>
+                <label class="cardnumtxt" max="9999999999999999" for="cardnum">Card Number:</label><br>
+                <input type="number" id="cardnum" name="cardnum" placeholder="1234 5678 9101 1020"><br>
+                <label class= "cardholdtxt" for="cardhold">Card holder:</label><br>
+                <input type="text" id="cardhold" name="cardhold" placeholder="Wesley Stecker">
+                <label class= "expmmtxt" for="expmm">Expiration:</label><br>
+                <input type="number" max="12" id="expmm" name="expmm" placeholder="MM">
+                <input type="number" max="99" id="expyy" name="expyy" placeholder="YY">
+            </div>
+        </div>
+        
         <button>Submit</button>
     </form>
 
