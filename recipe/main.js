@@ -13,7 +13,7 @@ function getRandomRecipe() {
 }
 
 
-// Function to create a recipe card
+
 function createRecipeCard(recipe) {
     return `
         <div class="recipe">
@@ -30,10 +30,10 @@ function createRecipeCard(recipe) {
     `;
 }
 
-// Populate the main content with recipes
+
 function loadRandomRecipe() {
     const randomRecipe = getRandomRecipe();
     mainContent.innerHTML = createRecipeCard(randomRecipe);
 }
-// Load recipes when the script runs
+
 loadRandomRecipe();

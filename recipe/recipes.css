@@ -24,7 +24,7 @@ header {
     border-width: 1px;
 }
 
-input {
+.searchtxt {
     width: 1000px;
 }
 
@@ -67,7 +67,7 @@ hr {
     color: #41c3fa;
 }
 
-img {
+.searchbutton {
 	max-width: 100%;
 }
 
