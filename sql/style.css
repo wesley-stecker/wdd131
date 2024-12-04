@@ -1,0 +1,53 @@
+body {
+    background-color: #00A9A5;
+}
+
+header {
+    background-color: #092327;
+    color: white;
+}
+
+main {
+    background-color: #00A9A5;
+    display: flex;
+}
+
+div {
+    background-color: #4E8098;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 25px;
+    padding:  10px 0px;
+    color: black;
+}
+
+footer {
+    background-color: #092327;
+    color: white;
+}
+
+div {
+    width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.without_ampm::-webkit-datetime-edit-ampm-field {
+    display: none;
+  }
+  input[type=time]::-webkit-clear-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance:none;
+    appearance: none;
+    margin: -10px; 
+  }
