@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>The Music Manager</h1>
+    </header>
+    <main>
+        <div class="newsong">
+            <h2>Add a New song</h2>
+            <p>Song Name</p>
+            <input type="text">
+            <p>Length</p>
+            <input type="time" class="without_ampm" value="01:00">
+            <p>Rating 1-5</p>
+            <input type="number" min=".5" max="5" step=".5" value="3">
+        </div>
+        <div class="newartist">
+            <h2>Add a Artist</h2>
+            <p>Artist name</p>
+            <input type="text">
+            <p>Start Year</p>
+            <input type="number" min="1000" max="9999" step="1" value="1950">
+            <p>End Year</p>
+            <input type="number" min="1000" max="9999" step="1" value="">
+        </div>
+        <div class="newalbum">
+            <h2>Add a Album</h2>
+            <p>Album name</p>
+            <input type="text">
+            <p>Year</p>
+            <input type="number" min="1000" max="9999" step="1" value="1950">
+            <p>Length</p>
+            <input type="time" class="without_ampm" value="01:00">
+        </div>
+    </main>
+    <footer>
+        <p>Created by Wesley Stecker for my SQL class</p>
+    </footer>
+</body>
+</html>
