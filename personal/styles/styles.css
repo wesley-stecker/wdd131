@@ -78,3 +78,15 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+.reviewform {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+#reviewtext {
+    height: 100px;
+}
