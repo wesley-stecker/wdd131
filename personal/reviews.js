@@ -1,4 +1,3 @@
-// Initialize reviews or load from localStorage
 let reviews = localStorage.getItem('gameReviews') 
     ? JSON.parse(localStorage.getItem('gameReviews')) 
     : [
@@ -16,13 +15,13 @@ let reviews = localStorage.getItem('gameReviews')
     }
 ];
 
-// Function to add a new review
+
 export function addReview(newReview) {
     reviews.push(newReview);
-    // Save to localStorage
+    
     localStorage.setItem('gameReviews', JSON.stringify(reviews));
     return reviews;
 }
 
-// Export the reviews array
+
 export { reviews };
